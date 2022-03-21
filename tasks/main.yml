@@ -1,0 +1,13 @@
+---
+  - name: make snapshot
+    community.general.proxmox_snap:
+      api_user: "{{vm_api_user}}"
+      api_password: "{{ vm_api_password }}"
+      api_host: "{{ vm_api_host }}"
+      hostname: "{{ vm_hostname }}"
+      state: present
+     #vmid: "{{ vm_vmid }}"
+      vmstate: true
+      snapname: "{{ vm_snapname }}"
+      timeout: "{{ vm_timeout | default(60) }}"
+   #become: true
