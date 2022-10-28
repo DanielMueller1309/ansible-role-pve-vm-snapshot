@@ -3,7 +3,7 @@
     community.general.proxmox_snap:
       api_user: "{{vm_api_user}}"
       api_password: "{{ vm_api_password }}"
-      api_host: "{{ vm_api_host }}"
+      api_host: "{{ vm_api_host }}{{ vm_api_domain }}"
       hostname: "{{ vm_hostname }}"
       state: present
      #vmid: "{{ vm_vmid }}"

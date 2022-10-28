@@ -5,3 +5,4 @@ vm_api_user: 'root@pam' # the token to use the api
 vm_api_password: "hallowelt"  # the password of the api user f.E. root
 vm_vmid: ''
 vm_snapname: 'snap-from-ansible'
+vm_api_domain: '.home' #domain of the api host
